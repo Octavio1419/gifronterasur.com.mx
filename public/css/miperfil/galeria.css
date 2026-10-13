@@ -1,0 +1,208 @@
+  .bg-gradient-primary {
+      background: linear-gradient(90deg, #fd0d0dad 0%, #5696e5 100% 100%);
+   }
+
+   .modal-content {
+   transition: all 0.3s ease-in-out;
+   }
+
+   .modal-body input:focus,
+   .modal-body textarea:focus,
+   .modal-body select:focus {
+   border-color: #0d6efd;
+   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+   }
+
+   .blur-bg {
+   filter: blur(20px);
+   opacity: 0.9;
+   object-fit: cover;
+   z-index: 1;
+   }
+   .profile-photo-container {
+   background-color: rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(10px);
+   border-radius: 20px;
+   }
+   #bien_confirm_password {
+   animation: fadeMatch 0.4s ease-in-out;
+   transition: opacity 0.3s ease;
+   }
+
+   @keyframes fadeMatch {
+      from {
+         opacity: 0;
+         transform: translateY(-6px);
+      }
+      to {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+     #preview-container {
+    
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  #preview-container img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #4c51bf, #553c9a);
+  }
+  .btn-soft-success {
+  background: linear-gradient(135deg, #ffffff, #98a79e);
+  color: #1b1b1b;
+  padding: 0.75rem 1.5rem;
+  /*border-radius: 30px;*/
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 4px 10px rgba(117, 117, 117, 0.4);
+  transition: all 0.3s ease;
+   }
+
+   .bi-cloud-upload {
+   margin-right: 8px;
+   font-size: 1.2rem;
+   }
+   .foto-wrapper {
+  width: 100%;
+  aspect-ratio: 1/1; /* Mantiene cuadrado */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta la imagen para rellenar */
+  display: block;
+}
+.usuario-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.usuario-card:hover {
+  background-color: #f0f8ff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.usuario-card.selected {
+  background-color: #d1ecf1;
+  border-color: #0c5460;
+}
+
+.usuario-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.notificacion-no-leida {
+  background-color: #e6f0ff; /* Azul clarito */
+  border-left: 4px solid #007bff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.notificacion-leida {
+  background-color: #ffffff;
+  padding: 8px;
+}
+
+.notificacion-no-leida .fw-bold {
+  font-weight: bold;
+}
+
+.tarea-resaltada {
+   outline: 2px solid #0d6efd;
+   box-shadow: 0 0 8px rgba(13, 110, 253, 0.4);
+   transition: all 0.3s ease;
+}
+  /* Área de carga de archivos */
+  .file-drop-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #0d6efd;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .file-drop-area:hover {
+    background-color: #e9ecef;
+  }
+
+  .file-drop-area i {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 5px;
+  }
+
+  /* Vista previa */
+  .preview-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .preview-container img,
+  .preview-container iframe {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid #dee2e6;
+  }
+  .archivos-dropdown {
+   min-width: 250px;
+   max-height: 300px;
+   overflow-y: auto;
+   }
+   .archivos-dropdown a {
+      text-decoration: none;
+      color: inherit;
+   }
+   .spinner {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #0078D4;
+  border-radius: 50%;
+  animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+  to { transform: rotate(360deg); }
+}
